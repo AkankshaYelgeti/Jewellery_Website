@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+<script>
+MyBanners=new Array('n5.jpg','e5.jpg','w6.jpg','r13.jpg','e6.jpg','r14.jpg')
+banner=0
+function ShowBanners()
+{
+if (document.images)
+{
+banner++
+if (banner==MyBanners.length)
+{
+banner=0
+}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",1500)
+}
+}
+
+</script>
+</head>
+<style>
+ div{
+width:1200px;
+height:900px;
+align:center;
+}
+  body{
+        text-align:justify;
+         }
+  ul {
+        padding: 0;
+        list-style: none;
+        background: black;
+      }
+  ul li { 
+        display: inline-block; 
+        }
+  ul li a {
+               display: block;
+               padding: 10px 40px;
+               color: WHITE;
+               text-decoration: none;
+            }
+  ul li a:hover { background: #808080; }
+#div1{
+	text-indent:3em;	
+}
+p{
+	text-indent:3em;
+}
+
+</style>
+
+<body bgcolor="#BEBEBE" onload="ShowBanners()">
+
+  <font face="segoe print">
+  <center> <h1> KJP JEWELLERY </h1> 
+  <marquee><b>Contact Address: KJP Jewellers, 1234, Ganga Tower, Solapur-400005, Maharashtra, India</b></marquee>
+   <ul>
+   <li selected> <a href="mainpage.html"> HOME </a> </li>
+   <li> <a href="Ring.html"> RINGS</a> </li> 
+   <li> <a href="neckleces.html"> NECKLACES </a> </li> 
+   <li> <a href="earring.html"> EARRINGS </a> </li> 
+   <li> <a href="watch.html"> WATCHES </a> </li> 
+   <li> <a href="about.html"> ABOUT US </a> </li> 
+    </ul>  
+    </center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src="b1.png" width="90%" height="80%" name="ChangeBanner"/>
+<div id="div1">
+ <h2 ><u>Value added services being offered by the KPJ JEWELLERS</u></h2>
+<p>The exquisite shine of precious metal jewels is alluring and timeless in appeal.Their sparking beauty is accentuated by their proper care and maintenance. 
+While buying any beautiful gold, silver or diamond jewellery, always ensure that you receive proper services from the seller’s end.Most of the reputed Jewellery offer these services complementary with the sold items. So, always check out the privileges you as value added services before buying jewellery.Let us go through these services that will surely enrich your jewellery shopping experience forever.</p>
+	
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Free gold purity check.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Free jewellery cleaning.</p> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Customized jewellery design.</p> 
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While buying any precious jewellery, always check out these value added services offered by the jeweller.<br><br>
+<center><a href="#top">Back to Top </a></center>
+
+		</p>
+</div>
+	</font>
+</div>
+   </html>

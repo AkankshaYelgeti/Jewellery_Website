@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Open new window</title>
+</head>
+<body bgcolor="#BEBEBE">
+<font face="segoe print">
+<form name="openwindow" action="openwindow.php" method="post">
+		<center>
+        <table>
+		<tr><br></tr>
+		<th><h2><u>Product Details </u></h2></th>
+            <tr>
+                <td>
+                    Product No :- <input type="text"  placeholder="Enter Product No" name="product"required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Quantity :- &nbsp;&nbsp;
+					<select name="quantity"required>
+						<option value="1"> Enter the Quantity  </option>
+						<option value="1"> 1 </option>
+						<option value="2"> 2 </option>
+						<option value="3"> 3 </option>
+						<option value="4"> 4 </option>
+						<option value="5"> 5 </option>
+						<option value="6"> 6 </option>
+						</select><br><br>
+                </td>
+            </tr>
+			<th><h2><u>Customer Details</u></h2></th>
+            <tr>
+                <td>
+                    Name :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" placeholder="Enter Your Name" name="cname"required><br><br>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        Phone No :-&nbsp;&nbsp;
+						<input type="number"  id="mn" placeholder="Enter Your Mobile No." name="mob" ><br><br>
+
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        Email Id :-&nbsp;&nbsp;&nbsp;
+						<input type="email" placeholder="Enter Your Email" name="email" required><br><br>
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        City :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" placeholder="Enter Your City" name="city" required><br><br>
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        Address :-&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" placeholder="Enter Your Address" name="address"required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" name="sub" value="Order" onclick="valid()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="Cancel" onclick="document.location='mainpage.html'">
+                    </td>
+                </tr>
+        </table>
+		</center>
+    </form>
+</font>
+<!--
+<script>
+function valid()
+{
+var mn1=/^[789][0-9]{9}$/;
+var ph="document.getElementById("mn").value;
+if(mn1.test(ph))
+{
+document.getElementById('s1').innerHTML=" ";
+}
+else
+{
+document.getElementById('s1').innerHTML="Enter Valid Mobile Number !";
+}
+}
+-->
+</script>
+
+</body>
+</html>
